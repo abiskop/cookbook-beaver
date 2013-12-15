@@ -10,7 +10,6 @@ start on virtual-filesystems
 stop on runlevel [06]
 
 respawn
-respawn limit 5 30
 limit nofile 65550 65550
 
 setuid root
