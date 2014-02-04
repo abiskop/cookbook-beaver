@@ -16,5 +16,5 @@ setuid root
 setgid root
 
 script
-exec beaver -c <%= @config_path %>/<%= @config_file %> -l <%= @log_path %>/<%= @log_file %>
+exec /usr/bin/python /usr/local/bin/beaver -c <%= @config_path %>/<%= @config_file %> -l <%= @log_path %>/<%= @log_file %>
 end script
